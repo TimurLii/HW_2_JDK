@@ -12,7 +12,6 @@ import java.util.List;
 public class ServerWindow extends JFrame implements ServerView {
     public static final int WIDTH = 400;
     public static final int HEIGHT = 300;
-    public static final String LOG_PATH = "src/server/log.txt";
 
     private ServerController serverController;
 
