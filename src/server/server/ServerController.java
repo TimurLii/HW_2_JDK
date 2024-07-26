@@ -8,9 +8,9 @@ import java.util.List;
 
 public class ServerController {
     private boolean work;
-    private ServerView serverView;
-    private List<ClientController> clientControllerList;
-    private Repository<String> repository;
+    private final ServerView serverView;
+    private final List<ClientController> clientControllerList;
+    private final Repository<String> repository;
 
     public ServerController(ServerWindow serverView, Repository<String> repository) {
         this.serverView = serverView;
@@ -34,7 +34,7 @@ public class ServerController {
         } else {
             work = false;
             while (!clientControllerList.isEmpty()){
-                disconnectUser(clientControllerList.get(clientControllerList.size() - 1));
+                disconnectUser(clientControllerList.getLast());
             }
             showOnWindow("Сервер остановлен!");
         }
