@@ -26,7 +26,7 @@ public class Calculate {
     }
 
     public static void main(String[] args) {
-        System.out.println(Calculate.sum(12, 3.3));
+        System.out.println(Calculate.sum(12, 3.3 ));
         System.out.println(Calculate.sum(1, 12));
         System.out.println(Calculate.divide(12, 2));
         System.out.println(Calculate.multiply(2, 2));

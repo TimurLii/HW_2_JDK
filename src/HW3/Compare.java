@@ -1,8 +1,5 @@
 package HW3;
 
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.Objects;
 
 public class Compare {
     public static void main(String[] args) {
@@ -17,9 +14,9 @@ public class Compare {
     }
     private  static <T >boolean compareArrays(T  []arr, T []arr2){
         if(arr.length != arr2.length) return false;
-//        return Arrays.equals(arr,arr2);
+
         for(int i =0;i < arr.length;i++){
-            if(!arr[i].equals(arr2[i])){
+            if(!arr[i].getClass().equals(arr2[i].getClass())){
                 return false;
             }
         }
